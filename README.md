@@ -122,12 +122,9 @@ AI の定型の見つけ方は、[yomiyasu](https://github.com/nanaism/yomiyasu)
 - 設計: [docs/design.md](docs/design.md)
 - 開発ガイド: [CLAUDE.md](CLAUDE.md)
 
-## タスクボード
+## 作者
 
-下の「Project Status」セクションは `backlog board export --readme` で自動更新されます。手動で書き換えないでください。
-
-<!-- BOARD_START -->
-<!-- BOARD_END -->
+okureyasu は個人開発で進めています。作者のほかのアプリも気になる方は、[こちら](https://yurudeep.com/apps/)からどうぞ。
 
 ## ライセンス
 

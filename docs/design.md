@@ -19,7 +19,6 @@ okureyasu/
 ├── tests/                     # 検査スクリプトの回帰テスト
 ├── evals/                     # スキルの評価ケース（skill-creator のケース形式）
 ├── docs/                      # このファイルなど（開発者向け）
-├── backlog/                   # タスク管理
 └── .claude-plugin/            # Claude Code プラグインの定義
 ```
 

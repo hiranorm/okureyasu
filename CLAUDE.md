@@ -21,7 +21,6 @@ skills/okureyasu/        スキル本体。配布されるのはここだけ
 tests/                   検査スクリプトの回帰テスト
 evals/                   評価ケース（skill-creator のケース形式）
 docs/                    concept.md / design.md
-backlog/                 Backlog.md
 .claude-plugin/          plugin.json / marketplace.json
 ```
 
@@ -58,35 +57,6 @@ backlog/                 Backlog.md
 
 ## このプロジェクトのルール
 
-- **タスク管理は Backlog.md**。下部の `<CRITICAL_INSTRUCTION>` セクションに従う。
-- **README.md** は外向けの入口（インストールと使い方）。タスクボード部分は `backlog board export --readme` が自動生成するため、マーカー間は手で編集しない。
+- **タスク管理は Backlog.md を使わない**（ワークスペース規約からの意図的な逸脱）。スキルは文書とスクリプトだけで、公開リポジトリにボードは要らないため。公開後のタスクと指摘は GitHub Issues で受ける。
+- **README.md** は外向けの入口（インストールと使い方、末尾に作者のアプリ群へのリンク1本）。ワークスペース規約の「最小入口」より厚いのは、公開スキルとして入れ方と使い方が要るため。
 - **ドキュメントの一次情報は本ファイル（CLAUDE.md）と `docs/`**。README と内容を重複させない。
-
-<!-- BACKLOG.MD MCP GUIDELINES START -->
-
-<CRITICAL_INSTRUCTION>
-
-## BACKLOG WORKFLOW INSTRUCTIONS
-
-This project uses Backlog.md MCP for all task and project management activities.
-
-**CRITICAL GUIDANCE**
-
-- If your client supports MCP resources, read `backlog://workflow/overview` to understand when and how to use Backlog for this project.
-- If your client only supports tools or the above request fails, call `backlog.get_backlog_instructions()` to load the tool-oriented overview. Use the `instruction` selector when you need `task-creation`, `task-execution`, or `task-finalization`.
-
-- **First time working here?** Read the overview resource IMMEDIATELY to learn the workflow
-- **Already familiar?** You should have the overview cached ("## Backlog.md Overview (MCP)")
-- **When to read it**: BEFORE creating tasks, or when you're unsure whether to track work
-
-These guides cover:
-- Decision framework for when to create tasks
-- Search-first workflow to avoid duplicates
-- Links to detailed guides for task creation, execution, and finalization
-- MCP tools reference
-
-You MUST read the overview resource to understand the complete workflow. The information is NOT summarized here.
-
-</CRITICAL_INSTRUCTION>
-
-<!-- BACKLOG.MD MCP GUIDELINES END -->
