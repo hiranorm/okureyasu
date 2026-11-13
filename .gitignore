@@ -3,3 +3,9 @@ __pycache__/
 .DS_Store
 /okureyasu-workspace/
 /evals/results/
+
+# ローカル専用（git に上げない）
+# .claude/ には自動メモリ（autoMemoryDirectory）と settings.local.json、npx skills add のリンクが入る
+/.claude/
+/.agents/
+/skills-lock.json
