@@ -26,6 +26,8 @@ class DetectsNonKyotoForms(unittest.TestCase):
     cases = [
         ("せやな、そう思います。", "osaka-seya"),
         ("今日は誰もけえへん。", "osaka-keehen"),
+        ("何も出てこうへんとき。", "osaka-keehen"),
+        ("まだ来うへん。", "osaka-keehen"),
         ("これで動くねん。", "osaka-nen"),
         ("それでよろしいでっせ。", "osaka-merchant"),
         ("問題おまへん。", "osaka-merchant"),
@@ -102,6 +104,7 @@ class AcceptsKyotoForms(unittest.TestCase):
         "高うおす。よろしおす。むつかしおす。",
         "言わはった。書かはる。使わはった。行かはる。",
         "見いひん。いいひん。きいひん。しいひん。起きひん。",
+        "何も出てきいひんときは、向こうへんに置いといて。",
         "まだ終わってへん。",
         "そう言わはっても、ようせんのどす。",
         "直しときましたさかい、もういっぺん動かしてみとくれやす。",
