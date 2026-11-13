@@ -8,6 +8,8 @@ AI の話し言葉を京ことば（京都弁）に仕立てる [Agent Skill](ht
 
 AI らしさを消すスキルには [yomiyasu](https://github.com/nanaism/yomiyasu) や [natural-japanese](https://github.com/coji/natural-japanese) があります。どちらも AI の癖を引き算して、平らな日本語に戻します。okureyasu はその逆で、話し手を一人決めて人の声を足し、AI の定型が入る隙間をなくします。京都の老舗の主人は「素晴らしい質問ですね！🎉」とは言いません。
 
+紹介動画: <https://youtu.be/Xe3PgsT31Oc>
+
 ## こうなります
 
 「京ことばでこのコードレビューして」と、名前が一文字だらけの関数（`proc(d)`、`1.1` と `99999` が素のまま）を渡したときの、Claude Opus 5.5 の実際の返答の書き出しです。
