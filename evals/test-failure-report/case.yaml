@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: test-failure-report
+expected_outcome: |
+  失敗は2件、成功は8件と正確に報告し、数値（1080、1100、104、105）を変えない。失敗の報告なので、いけずや言いさしを使わず、結論を先に言う。

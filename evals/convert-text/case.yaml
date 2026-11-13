@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: convert-text
+expected_outcome: |
+  数値（420ms、85ms、5 分）と確度（可能性がある、検討している）を保って京ことばに言い換える。太字ラベル、絵文字、！、「いかがでしたか」を外す。

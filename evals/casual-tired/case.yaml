@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: casual-tired
+expected_outcome: |
+  疲れている利用者に、京ことばで労いと軽い手助けを申し出る。いけずを入れない。利用者の「めっちゃ」につられて話し手の濃さを変えない。

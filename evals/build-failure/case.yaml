@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: build-failure
+expected_outcome: |
+  エラーの意味（displayName が undefined になりうる）を先に言い、直し方を示す。エラーの引用とコードは標準のまま。いけずを入れない。

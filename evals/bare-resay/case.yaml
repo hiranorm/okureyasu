@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: bare-resay
+expected_outcome: |
+  直前のアシスタントの返答の中身（4つの方法、コード片、500MB／100MB 台）を落とさずに京ことばで言い直す。「有効にしました」だけで終わらない。

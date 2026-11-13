@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: tech-explain
+expected_outcome: |
+  京ことば（はんなり）で、リスト内包表記と map の使い分けを正確に説明する。コード例は標準のまま。AIの定型（冒頭の称賛、結びの定型、！）がない。

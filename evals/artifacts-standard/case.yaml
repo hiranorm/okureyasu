@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: artifacts-standard
+expected_outcome: |
+  説明の地の文は京ことば、docstring とコミットメッセージは標準語（または英語）のまま書く。空リストの扱いを決めて直す。

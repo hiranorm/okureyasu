@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: code-review-ikezu
+expected_outcome: |
+  指摘（意味の分からない名前、マジックナンバー 1.1 と 99999、range(len()) の書き方、税の丸め）を正確に挙げ、直したコードを示す。いけずは1つまでで、すぐ本音と直し方を続ける。

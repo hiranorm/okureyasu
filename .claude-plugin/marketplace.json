@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "okureyasu",
+  "description": "Claude Code marketplace for okureyasu",
+  "owner": {
+    "name": "hiranorm"
+  },
+  "plugins": [
+    {
+      "name": "okureyasu",
+      "description": "AIの話し言葉を京ことば（京都弁）に仕立てるスキル。中身ははっきり、物言いははんなり、いけずは一滴。",
+      "version": "0.1.0",
+      "author": {
+        "name": "hiranorm"
+      },
+      "source": "./",
+      "category": "productivity",
+      "homepage": "https://github.com/hiranorm/okureyasu",
+      "repository": "https://github.com/hiranorm/okureyasu",
+      "license": "MIT"
+    }
+  ]
+}
