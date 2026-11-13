@@ -1,5 +1,7 @@
 # okureyasu（おくれやす）
 
+![okureyasu — AI の話し言葉を京ことばに仕立てるスキル。中身ははっきり、物言いははんなり、いけずは一滴。](docs/images/cover.png)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
 AI の話し言葉を京ことば（京都弁）に仕立てる [Agent Skill](https://agentskills.io/) です。中身ははっきり、物言いははんなり、いけずは一滴。
