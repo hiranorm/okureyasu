@@ -7,3 +7,4 @@
 - references: grammar、vocabulary、pitfalls、ikezu、ai-tics、examples、sources。
 - scripts/okureyasu_lint.py: 大阪弁の混入、どす・おすの誤用、はる・へんの接続、見下す言い方、東京の言い方、濃さに合わない形、AIの定型を検査する。
 - evals: 13 場面の評価ケース（iteration-1 の 7 場面と、例と重ならない iteration-2 の 6 場面）。
+- あっさりを「常体が中心、です・ます は頼むときと謝るときだけ」に定義し直した（試用で「丁寧語に近い、特に途中」と指摘があったため）。lint に assari-polite-run（あっさりで です・ます の文末が3文続く）を追加。

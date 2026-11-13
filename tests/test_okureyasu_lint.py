@@ -76,6 +76,13 @@ class DetectsNonKyotoForms(unittest.TestCase):
         self.assertIn("new-henkatta", rules("動かへんかった。", level="hannari"))
         self.assertNotIn("new-henkatta", rules("動かへんかった。", level="assari"))
 
+    def test_assari_polite_run(self):
+        polite = "原因は設定です。直しておきました。もう一度動かしてみてください。テストも通りました。"
+        self.assertIn("assari-polite-run", rules(polite, level="assari"))
+        self.assertNotIn("assari-polite-run", rules(polite, level="hannari"))
+        casual = "原因は設定やわ。直しといた。もういっぺん動かしてみて。テストも通りました。"
+        self.assertNotIn("assari-polite-run", rules(casual, level="assari"))
+
 
 class AcceptsKyotoForms(unittest.TestCase):
     """正しい京ことばを拾わないこと（誤検出の回帰）。"""

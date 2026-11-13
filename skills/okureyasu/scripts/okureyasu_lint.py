@@ -337,8 +337,36 @@ def lint_text(text: str, level: str = "hannari", path: str = "<stdin>",
             suggestion = rule.suggest(m) if rule.suggest else ""
             findings.append(Finding(path, line, col, rule.id, rule.severity,
                                     m.group(0), rule.message, suggestion))
+    if level == "assari" and SEVERITY_ORDER["warn"] >= SEVERITY_ORDER[min_severity]:
+        findings.extend(_polite_runs(masked, path))
     findings.sort(key=lambda f: (f.path, f.line, f.col, -SEVERITY_ORDER[f.severity]))
     return findings
+
+
+# あっさりで「です・ます」の文末が続いたら知らせる（訛った丁寧語になっている合図）
+POLITE_END_RE = re.compile(r"(?:です|ます|ました|ません|でした|ましょう|ましょ|ませんか|ますか|ですか|ください|下さい)[ねよなわか]?[。！？!?]?$")
+SENTENCE_RE = re.compile(r"[^。！？!?\n]+[。！？!?]?")
+POLITE_RUN = 3
+
+
+def _polite_runs(masked: str, path: str) -> list[Finding]:
+    out: list[Finding] = []
+    run: list[re.Match] = []
+    for m in SENTENCE_RE.finditer(masked):
+        sent = m.group(0).strip()
+        if not sent:
+            continue
+        if POLITE_END_RE.search(sent):
+            run.append(m)
+            if len(run) == POLITE_RUN:
+                first = run[0]
+                line, col = _line_col(masked, first.start() + (len(first.group(0)) - len(first.group(0).lstrip())))
+                out.append(Finding(path, line, col, "assari-polite-run", "warn", sent[-12:],
+                                   f"あっさりで「です・ます」の文末が{POLITE_RUN}文続いている（訛った丁寧語に聞こえる）",
+                                   "〜や／〜わ／〜へん／〜しといた で言い切る"))
+        else:
+            run = []
+    return out
 
 
 def format_finding(f: Finding) -> str:
